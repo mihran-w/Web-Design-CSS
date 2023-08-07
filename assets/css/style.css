@@ -1,0 +1,242 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.woff2') format('woff2'),
+        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.eot') format('embedded-opentype'),
+        url('../fonts/Vazir.ttf') format('truetype');
+}
+
+body,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    direction: rtl;
+    font-family: Vazir;
+}
+
+i {
+    color: #fff;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #072e33;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: start;
+}
+
+header nav ul li {
+    margin-right: 2.15rem;
+    color: #fff;
+}
+
+
+header nav ul li a img {
+    width: 80px;
+}
+
+header nav ul li:hover {
+    color: rgb(109, 162, 218);
+    border-bottom: 3px solid rgb(109, 162, 218);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(109, 162, 218);
+    transition: all 0.3s;
+}
+
+.custom-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.custom-btn:hover {
+    color: #000;
+    border: 2px solid #ffcf00;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all 0.3s;
+    background-color: #ffcf00;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: #ffcf00;
+}
+
+.hero p {
+    font-weight: bold;
+    color: #a39b9b;
+    text-align: justify;
+}
+
+.hero a,
+i {
+    color: #000;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hero i:hover {
+    color: #ffcf00;
+    transition: all 0.3s;
+    /* transform: scaleY(2); */
+    font-size: 24px;
+}
+
+
+
+main {
+    margin-top: 5rem;
+}
+
+main #services .row-1 {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 20rem; */
+    gap: 10px;
+}
+
+main #services .row-1 .card {
+  
+    height: 25rem;
+    margin-left: 15px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.58);
+}
+
+main #services .row-1 .card p {
+    text-align: justify;
+}
+
+main #services .row-1 .card .card-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+footer {
+    background-color: #072e33;
+    color: #fff;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .d-flex{
+    display: flex;
+}
+
+footer p {
+    text-align: justify;
+}
+
+footer .w-logo {
+    width: 20%;
+}
+
+footer ul li {
+    margin: 5px;
+}
+
+footer ul li a:hover {
+    color: #ffcf00;
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 487px) {
+    body {
+      background-color: lightblue;
+    }
+
+    main #services .row-1 {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 20rem; */
+        gap: 10px;
+    }
+  }
+@media only screen and (min-width: 488px) and (max-width: 900px) {
+    body {
+      background-color: red;
+    }
+
+    main #services .row-1 {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 20rem; */
+        gap: 10px;
+    }
+  }
+
+
+/* @media only screen and (min-width: 301px) {
+    body {
+      background-color: rgb(177, 230, 173);
+    }
+  }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(177, 230, 173);
+    }
+  } */
